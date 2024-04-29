@@ -2,7 +2,7 @@
 title: 'Agent configuration'
 categories: ["reference"]
 description: Authentication types for the Rhize agent
-weight: 900
+weight: 100
 menu:
   main:
     parent: reference

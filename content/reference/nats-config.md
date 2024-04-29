@@ -1,10 +1,9 @@
 ---
 title: 'NATS configuration'
 date: '2023-10-04T10:22:15-03:00'
-draft: true
 categories: ["reference"]
 description: Values and parameters to configure NATS in your Rhize operation
-weight: 300
+weight: 200
 menu:
   main:
     parent: reference
@@ -32,22 +31,17 @@ The `$KV` topic is reserved for messages about the [Key/Value Store](https://doc
 
 Subtopics include the following:
 
-| Topic              | Description |
-|--------------------|-------------|
-| `$KV/JobResponses` |             |
+- `$KV/JobResponses`
 
 ## BPMN topics and configuration
 
 The `libreBPMN` topic is for messages about the BPMN engine.
 Subtopics include the following:
 
-
-| Topic                                 | Description |
-|---------------------------------------|-------------|
-| `libreBPMN/command/START_EVENT`       |             |
-| `libreBPMN/command/TASK_COMPLETE`     |             |
-| `libreBPMN/command/SERVICE_TASK`      |             |
-| `libreBPMN/command/EXCLUSIVE_GATEWAY` |             |
+- `libreBPMN/command/START_EVENT`
+- `libreBPMN/command/TASK_COMPLETE`
+- `libreBPMN/command/SERVICE_TASK`
+- `libreBPMN/command/EXCLUSIVE_GATEWAY`
 
 ### Streams
 
@@ -55,7 +49,6 @@ Subtopics include the following:
 - `LibreTimerStart`
 - `JobResponses KV`
 - `WorkflowSpecificationKV`
-
 
 ## NATS configuration
 
@@ -65,13 +58,11 @@ The following parameters configure the NATS message queues for different service
 
 The NATS configuration parameters for the BMPN streams are as follows:
 
-| Topic                             | Description |
-|-----------------------------------|-------------|
-| `CommandStreamReplicas`           |             |
-| `JobResponseKVMaxGB`              |             |
-| `JobResponseKVReplicas`           |             |
-| `JobResponseKVTTLMinutes`         |             |
-| `WorkflowSpecificationKVReplicas` |             |
+- `CommandStreamReplicas`
+- `JobResponseKVMaxGB`
+- `JobResponseKVReplicas`
+- `JobResponseKVTTLMinutes`
+- `WorkflowSpecificationKVReplicas`
 
 For example:
 
@@ -85,14 +76,8 @@ For example:
   },
 ```
 
-### Libre core 
+### Libre core
 
 The NATS configuration parameters for the Libre core topics are as follows:
-
-| Parameter   | Description |
-|-------------|-------------|
-| `serverUrl` |             |
-| `replicas`  |             |
-
-
-
+- `serverUrl`
+- `replicas`
